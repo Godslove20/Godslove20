@@ -1,0 +1,15 @@
+from datetime import datetime
+
+#Ask for user's name
+user_name = input('Hello. So nice to meet you. Can you tell me your name?')
+
+#Ask for the  user's birth year
+birth_year = int(input(f'Hello {user_name}. Could you tell me what year you were born?'))
+
+#Get the current year 
+current_year = datetime.now().year
+
+#Calculate the user's age
+age = current_year - birth_year
+
+print(f'{user_name}. You are {age} years old now!')
